@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "IDOT-STD-NAMES",
+  "version": "1.0",
+
+  "default_locale": "en",
+  "description": "This extension injects the name of IDOT Highway Standards into the IDOT file repo to aid transportation engineers and technicians in quickly finding relevent Highway Standards.",
+  "icons": {},
+
+  "page_action": {
+    "url":"https://www.idot.com"
+  },
+
+  "author": "Baylor Wagehoft, E.I.",
+  "background": {
+    "persistent": false
+  },
+  
+  "content_scripts": [{}],
+  "offline_enabled": true,
+  "options_page": "options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "permissions": ["tabs"],
+  "storage": {
+    "managed_schema": "schema.json"
+  }
+}
